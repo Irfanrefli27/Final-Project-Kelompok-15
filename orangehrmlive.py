@@ -15,7 +15,18 @@ def actionLogin(driver):
    
     #Call
     username.send_keys("Admin")
-    password.send_keys("qwertyuiop")
+    password.send_keys("admin123")
+    btnLogin.click()
+    time.sleep(5)
+    driver.get_screenshot_as_file("InvalidPassword.png")
+    time.sleep(10)
+
+def actionLogout(driver):
+    #setUp
+    btnProfile = driver.find_element(By.XPATH, "//div[@id='app']/div[@class='oxd-layout']//header[@class='oxd-topbar']//div[@class='oxd-topbar-header-userarea']/ul/li//p[@class='oxd-userdropdown-name']")
+    btnProfile.click()
+    btnLogin = driver.find_element(By.LINK_TEXT, "Logout")
+    #Call
     btnLogin.click()
     time.sleep(5)
     driver.get_screenshot_as_file("InvalidPassword.png")
