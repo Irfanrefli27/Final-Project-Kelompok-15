@@ -16,6 +16,7 @@ def main():
     driver.get("https://opensource-demo.orangehrmlive.com/ ")
     time.sleep(10)
     orangehrmlive.actionLogin(driver)
+    orangehrmlive.actionSearchAdmin(driver)
 
 
 
