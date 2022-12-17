@@ -80,8 +80,8 @@ def forget_password():
 if __name__ == '__main__':
     login_success()
     invalid_username()
-    invalid_password()
-    empty_username()
-    empty_password()
-    empty_username_password()
-    forget_password()
+    # invalid_password()
+    # empty_username()
+    # empty_password()
+    # empty_username_password()
+    # forget_password()

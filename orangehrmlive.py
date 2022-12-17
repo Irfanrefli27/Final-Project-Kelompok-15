@@ -17,8 +17,9 @@ def loginSuccess(driver):
     #Call
     username.send_keys("Admin")
     password.send_keys("admin123")
-    driver.get_screenshot_as_file("SuccessLogin.png")
     btnLogin.click()
+    time.sleep(10)
+    driver.get_screenshot_as_file("SuccessLogin.png")
     time.sleep(10)
 
 def invalidUsername(driver):
@@ -31,7 +32,7 @@ def invalidUsername(driver):
     username.send_keys("Admin@gmail.com")
     password.send_keys("admin123")
     btnLogin.click()
-    time.sleep(5)
+    time.sleep(10)
     driver.get_screenshot_as_file("InvalidUsername.png")
     time.sleep(10)
 
@@ -45,7 +46,7 @@ def invalidPassword(driver):
     username.send_keys("Admin")
     password.send_keys("qwertyuiop")
     btnLogin.click()
-    time.sleep(5)
+    time.sleep(10)
     driver.get_screenshot_as_file("InvalidPassword.png")
     time.sleep(10)
 
@@ -125,6 +126,20 @@ def searchValidAdmin(driver):
     # btnSearch = driver.find_element(By.XPATH , "//div[@id='app']/div[@class='oxd-layout']//div[@class='oxd-table-filter-area']/form[@class='oxd-form']/div[@class='oxd-form-actions']/button[@type='submit']")
     # btnSearch.click()
     # time.sleep(5)
+
+def searchUsernameOnly(driver):
+    loginSuccess(driver)
+    adminMenu = driver.find_element(By.CLASS_NAME, "oxd-main-menu-item")
+    adminMenu.click()
+    time.sleep(5)
+    username = driver.find_element(By.XPATH, "//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//div[@class='oxd-table-filter']/div[@class='oxd-table-filter-area']/form[@class='oxd-form']/div[@class='oxd-form-row']/div/div[1]/div/div[2]/input")
+    username.send_keys("Admin")
+    time.sleep(5)
+    btnSearch = driver.find_element(By.XPATH , "//div[@id='app']/div[@class='oxd-layout']//div[@class='oxd-table-filter-area']/form[@class='oxd-form']/div[@class='oxd-form-actions']/button[@type='submit']")
+    btnSearch.click()
+    time.sleep(5)
+    driver.get_screenshot_as_file("SearchUsernameOnly.png")
+    time.sleep(5)
 
 def searchEmployeeNameOnly(driver):
     loginSuccess(driver)
