@@ -19,4 +19,10 @@ def actionLogin(driver):
     btnLogin.click()
     time.sleep(10)
 
-
+def actionSearchAdmin(driver):
+    #setUp
+    menuAdmin = driver.find_element(By.XPATH, "//div[@id='app']//aside[@class='oxd-sidepanel']/nav[@role='navigation']//ul[@class='oxd-main-menu']//a[@href='/web/index.php/admin/viewAdminModule']")
+    menuAdmin.click()
+    drbdnUserRole = driver.find_element(By.XPATH, "//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//div[@class='oxd-table-filter']/div[@class='oxd-table-filter-area']/form[@class='oxd-form']/div[@class='oxd-form-row']/div/div[2]/div/div[2]/div[@class='oxd-select-wrapper']/div[1]")
+    drbdnUserRole.click()
+    time.sleep(20)
