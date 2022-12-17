@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.relative_locator import locate_with
 import time
+from selenium.webdriver.support.ui import Select
 
 def loginSuccess(driver):
     #setUp
@@ -112,15 +113,15 @@ def searchValidAdmin(driver):
     time.sleep(5)
     username = driver.find_element(By.XPATH, "//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//div[@class='oxd-table-filter']/div[@class='oxd-table-filter-area']/form[@class='oxd-form']/div[@class='oxd-form-row']/div/div[1]/div/div[2]/input")
     username.send_keys("Admin")
-    # userRole = driver.find_element(By.CLASS_NAME, "oxd-select-text--after")
-    # time.sleep(10)
-    # userRole.click()
     time.sleep(5)
+    find_employee_status = \
     drbdnUserRole = driver.find_element(By.XPATH, "//div[@id='app']/div[@class='oxd-layout']/div[@class='oxd-layout-container']/div[@class='oxd-layout-context']//div[@class='oxd-table-filter']/div[@class='oxd-table-filter-area']/form[@class='oxd-form']/div[@class='oxd-form-row']/div/div[2]/div/div[2]/div[@class='oxd-select-wrapper']/div[1]")
     drbdnUserRole.click()
-    time.sleep(5)
-    selectRole = driver.find_element(By.XPATH, "//div[@class='oxd-select-text oxd-select-text--focus']//div[@class='oxd-select-text-input'][normalize-space()='Admin']")
-    selectRole.click()
+    time.sleep(10)
+    select_employee_status = Select(find_employee_status)
+    select_employee_status.select_by_visible_text("Admin")
+    time.sleep(10)
+    
     # btnSearch = driver.find_element(By.XPATH , "//div[@id='app']/div[@class='oxd-layout']//div[@class='oxd-table-filter-area']/form[@class='oxd-form']/div[@class='oxd-form-actions']/button[@type='submit']")
     # btnSearch.click()
     # time.sleep(5)
