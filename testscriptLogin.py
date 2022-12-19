@@ -15,10 +15,7 @@ def login_success():
     
     driver.get("https://opensource-demo.orangehrmlive.com/ ")
     time.sleep(10)
-
-    orangehrmlive.actionLogin(driver)
-    orangehrmlive.actionLogout(driver)
-
+    orangehrmlive.loginSuccess(driver)
 
 def invalid_username():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
