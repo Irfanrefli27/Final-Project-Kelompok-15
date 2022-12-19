@@ -19,19 +19,19 @@ Job Desk Team :
 5. Fitur Dashboard – Directory : Irfan Refli
 
 Kelompok 15
-- list nama kelompok yg ikut kerja
+List nama kelompok yg ikut kerja
 
 1. Ahmad Afan Affaidin
-a. Test Cases: modul Login - Admin
-b. Manual Testing: modul Login - Admin
-c. Automation Testing: 
-      modul B feature C dan D
-      modul E feature F
-      a. Test Cases: modul Login - Admin
-      b. Manual Testing: modul Login - Admin
+      a. Test Cases: modul Login
+      b. Manual Testing: modul Login
       c. Automation Testing: 
-            modul B feature C dan D
-            modul E feature F
+            - modul B feature C dan D
+            - modul E feature F
+      a. Test Cases: modul Admin
+      b. Manual Testing: modul Admin
+      c. Automation Testing: 
+            - modul B feature C dan D
+            - modul E feature F
 
 2. Fadhil Rizky
 a. Test Cases: modul PIM – Leave
