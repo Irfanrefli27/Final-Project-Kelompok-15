@@ -21,17 +21,25 @@ Job Desk Team :
 Kelompok 15
 List nama kelompok yg ikut kerja
 
-1. Ahmad Afan Affaidin
-      a. Test Cases: modul Login
-      b. Manual Testing: modul Login
-      c. Automation Testing: 
-            - modul B feature C dan D
-            - modul E feature F
-      a. Test Cases: modul Admin
-      b. Manual Testing: modul Admin
-      c. Automation Testing: 
-            - modul B feature C dan D
-            - modul E feature F
+1. Ahmad Afan Affaidin<br>
+      a. Test Cases: modul Login<br>
+      b. Manual Testing: modul Login<br>
+      c. Automation Testing: <br>
+          - - Feature login_success<br>
+          - - Feature invalid_username<br>
+          - - Feature invalid_password<br>
+          - - Feature empty_username<br>
+          - - Feature empty_password<br>
+          - - Feature empty_username_password<br>
+          - - Feature forget_password<br>
+       
+      a. Test Cases: modul Admin<br>
+      b. Manual Testing: modul Admin<br>
+      c. Automation Testing: <br>
+          - - Feature search_username_only<br>
+          - - Feature search_employee_name_only<br>
+          - - Feature reset_button<br>
+          - - Feature not_registered_username<br>
 
 2. Fadhil Rizky
 a. Test Cases: modul PIM – Leave
