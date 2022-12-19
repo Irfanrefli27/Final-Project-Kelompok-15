@@ -37,7 +37,29 @@ def search_employee_name_only():
     time.sleep(5)
     orangehrmlive.searchEmployeeNameOnly(driver)
 
+def reset_button():
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    driver.maximize_window()
+    
+    driver.get("https://opensource-demo.orangehrmlive.com/ ")
+    time.sleep(5)
+    orangehrmlive.resetButton(driver)
+
+def not_registered_username():
+    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    driver.maximize_window()
+    
+    driver.get("https://opensource-demo.orangehrmlive.com/ ")
+    time.sleep(5)
+    orangehrmlive.searchNotRegisteredUsername(driver)
+
 if __name__ == '__main__':
     #search_valid_admin()
-    search_username_only()
-    #search_employee_name_only()
+    #search_username_only()
+    search_employee_name_only()
+    reset_button()
+    not_registered_username()
