@@ -1,7 +1,5 @@
-# Final-Project-Kelompok-15
 # FINAL PROJECT BOOTCAMP SOFTWARE QUALITY ASSURANCE KELOMPOK 15
 
-# jika ingin membuat class untuk select element buat di page orangehrmlive.py
 TEAM MEMBER:
 - Irfan Refli
 - Ibnu Afdhal
@@ -80,8 +78,4 @@ c. Automation Testing:
 
 
 # NOTES : jika ingin membuat class untuk select element buat di page orangehrmlive.py
-
-# Final-Project-Kelompok-15
-
-# jika ingin membuat class untuk select element buat di page orangehrmlive.py
 # setelah membuat class untuk select element makan buatlah file .py baru dan berinama sesuai test scenario
