@@ -7,26 +7,18 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 import time
 
-def search_valid_admin():
+def main():
     driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     chrome_options = Options()
     chrome_options.add_argument('--headless')
     driver.maximize_window()
     
     driver.get("https://opensource-demo.orangehrmlive.com/ ")
-    time.sleep(5)
-    orangehrmlive.searchValidAdmin(driver)
+    time.sleep(10)
 
-def search_employee_name_only():
-    driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
-    chrome_options = Options()
-    chrome_options.add_argument('--headless')
-    driver.maximize_window()
-    
-    driver.get("https://opensource-demo.orangehrmlive.com/ ")
-    time.sleep(5)
-    orangehrmlive.searchEmployeeNameOnly(driver)
+    orangehrmlive.actionLogin(driver)
+    orangehrmlive.actionDashboardMenu(driver)
+    orangehrmlive.actionLogout(driver)
 
 if __name__ == '__main__':
-    search_valid_admin()
-    #search_employee_name_only()
+    main()
