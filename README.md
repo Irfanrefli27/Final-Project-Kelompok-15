@@ -21,37 +21,37 @@ Kelompok 20
 - list nama kelompok yg ikut kerja
 
 1. Ahmad Afan Affaidin
-a. Test Cases: modul Login - Admin
-b. Manual Testing: modul Login - Admin
-c. Automation Testing: 
-      modul B feature C dan D
-      modul E feature F
+      a. Test Cases: modul Login - Admin
+      b. Manual Testing: modul Login - Admin
+      c. Automation Testing: 
+            modul B feature C dan D
+            modul E feature F
 
 2. Fadhil Rizky
-a. Test Cases: modul PIM – Leave
-b. Manual Testing: modul PIM – Leave
-c. Automation Testing: 
-      modul B feature C dan D
-      modul E feature F
+      a. Test Cases: modul PIM – Leave
+      b. Manual Testing: modul PIM – Leave
+      c. Automation Testing: 
+            modul B feature C dan D
+            modul E feature F
 
 3. Ibnu Afdhal
-a. Test Cases: modul Time – Recruitment
-b. Manual Testing: modul Time – Recruitment
-c. Automation Testing: -
+      a. Test Cases: modul Time – Recruitment
+      b. Manual Testing: modul Time – Recruitment
+      c. Automation Testing: -
       
 4. Muhammad Farras Naufal
-a. Test Cases: modul Info – Performance
-b. Manual Testing: modul Info – Performance
-c. Automation Testing: 
-      modul B feature C dan D
-      modul E feature F
+      a. Test Cases: modul Info – Performance
+      b. Manual Testing: modul Info – Performance
+      c. Automation Testing: 
+            modul B feature C dan D
+            modul E feature F
 
 5. Irfan Refli
-a. Test Cases: modul Dashboard – Directory
-b. Manual Testing: modul Dashboard – Directory
-c. Automation Testing: 
-      modul B feature C dan D
-      modul E feature F
+      a. Test Cases: modul Dashboard – Directory
+      b. Manual Testing: modul Dashboard – Directory
+      c. Automation Testing: 
+            modul B feature C dan D
+            modul E feature F
 
 
 # NOTES : jika ingin membuat class untuk select element buat di page orangehrmlive.py
