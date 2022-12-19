@@ -9,7 +9,7 @@ TEAM MEMBER:
 
 
 Link Test Case Document : https://docs.google.com/spreadsheets/d/1ZoVhKTr1L6Ui3LmgwgEzXhryInr1RYH-aC8VvyrLHZ0/edit?usp=sharing <br>
-Link Video Automation : https://drive.google.com/drive/folders/1hIMjtAEakVcnrWGT-HexAmzWqaPBYA_c?usp=share_link
+Link Video Automation : https://drive.google.com/drive/folders/1hIMjtAEakVcnrWGT-HexAmzWqaPBYA_c?usp=sharing
 
 Job Desk Team :
 1. Fitur Login - Admin : Ahmad Afan Affaidin
